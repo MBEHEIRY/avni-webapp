@@ -1,4 +1,4 @@
-name: Node.js CI
+name: AUTO BUILD and TEST with PUSH to Test_Docker Branch
 
 on:
   push:
@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use YARN
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
