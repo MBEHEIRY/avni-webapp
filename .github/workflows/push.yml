@@ -10,15 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Installing
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install # will run `yarn install` command
+      #- name: Installing
+      #  uses: borales/actions-yarn@v2.0.0
+      #  with:
+      #    cmd: install # will run `yarn install` command
 
-      - name: Testing
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: test # will run `yarn test` command
+      #- name: Testing
+      #  uses: borales/actions-yarn@v2.0.0
+      #  with:
+      #    cmd: test # will run `yarn test` command
 
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)

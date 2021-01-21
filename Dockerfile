@@ -4,7 +4,6 @@ WORKDIR /home/runner/work/avni-webapp/avni-webapp
 
 COPY package*.json ./
 
-RUN pip install --global npm
 RUN npm install --global yarn
 RUN yarn install
 
