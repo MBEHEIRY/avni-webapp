@@ -1,7 +1,9 @@
 name: Node.js CI
 
 on:
-  push: [Test_Docker]
+  push:
+    branches:
+      - Test_Docker
 
 jobs:
   build:
