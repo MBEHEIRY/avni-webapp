@@ -36,5 +36,5 @@ jobs:
           username: mbeheiry
           password: Safia90&&
           repository: mbeheiry/testing_1
-          tags: V-${{ steps.current-time.outputs.time }}-${{ steps.current-time.outputs.day }}
+          tags: V-${{ steps.current-time.outputs.day }}
           tag_with_ref: false
