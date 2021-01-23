@@ -29,4 +29,5 @@ jobs:
           username: mbeheiry
           password: Safia90&&
           repository: mbeheiry/testing_1
+          tags: "V1.0.1"
           tag_with_ref: false
