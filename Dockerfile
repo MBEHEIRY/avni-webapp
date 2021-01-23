@@ -6,6 +6,8 @@ COPY package*.json ./
 
 RUN yarn install
 
+RUN yarn upgrade
+
 COPY . .
 
 EXPOSE 6010
